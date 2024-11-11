@@ -1,19 +1,116 @@
 {
-  "posts": [
+  "rooms": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "room_id": "R101",
+      "room_name": "Room 101",
+      "capacity": 30,
+      "building": "Building A",
+      "floor": 1
+    },
+    {
+      "room_id": "R102",
+      "room_name": "Room 102",
+      "capacity": 25,
+      "building": "Building B",
+      "floor": 2
     }
   ],
-  "comments": [
+  "teachers": [
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "teacher_id": "T001",
+      "first_name": "John",
+      "last_name": "Doe",
+      "email": "johndoe@example.com",
+      "department": "Mathematics",
+      "phone": "1234567890"
+    },
+    {
+      "teacher_id": "T002",
+      "first_name": "Jane",
+      "last_name": "Smith",
+      "email": "janesmith@example.com",
+      "department": "Physics",
+      "phone": "0987654321"
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "subjects": [
+    {
+      "subject_id": "S001",
+      "subject_name": "Mathematics 101",
+      "subject_code": "MATH101",
+      "department": "Mathematics",
+      "description": "Introduction to Algebra and Calculus"
+    },
+    {
+      "subject_id": "S002",
+      "subject_name": "Physics 101",
+      "subject_code": "PHYS101",
+      "department": "Physics",
+      "description": "Fundamentals of Physics"
+    }
+  ],
+  "classes": [
+    {
+      "class_id": "C001",
+      "subject_id": "S001",
+      "class_name": "Mathematics 101 - Section A",
+      "students": [
+        "ST001",
+        "ST002",
+        "ST003"
+      ]
+    },
+    {
+      "class_id": "C002",
+      "subject_id": "S002",
+      "class_name": "Physics 101 - Section B",
+      "students": [
+        "ST004",
+        "ST005",
+        "ST006"
+      ]
+    }
+  ],
+  "sessions": [
+    {
+      "session_id": "SS001",
+      "subject_id": "S001",
+      "teacher_id": "T001",
+      "room_id": "R101",
+      "class_id": "C001",
+      "session_date": "2024-11-06",
+      "start_time": "09:00",
+      "end_time": "11:00"
+    },
+    {
+      "session_id": "SS002",
+      "subject_id": "S002",
+      "teacher_id": "T002",
+      "room_id": "R102",
+      "class_id": "C002",
+      "session_date": "2024-11-07",
+      "start_time": "10:00",
+      "end_time": "12:00"
+    }
+  ],
+  "students": [
+    {
+      "student_id": "ST001",
+      "first_name": "Alice",
+      "last_name": "Johnson",
+      "email": "alice.johnson@example.com"
+    },
+    {
+      "student_id": "ST002",
+      "first_name": "Bob",
+      "last_name": "Williams",
+      "email": "bob.williams@example.com"
+    },
+    {
+      "student_id": "ST003",
+      "first_name": "Charlie",
+      "last_name": "Davis",
+      "email": "charlie.davis@example.com"
+    }
+  ]
 }
